@@ -2,9 +2,9 @@ Citizen.CreateThread(function()
 	while true do
 		SetDiscordAppId('872549139190259743')
 		SetDiscordRichPresenceAsset('kekekekkeke.png')
-        SetDiscordRichPresenceAssetText('AdvancedV')
+        SetDiscordRichPresenceAssetText('AdvancedV.')
         SetDiscordRichPresenceAssetSmall('kekekekkeke.png')
-        SetDiscordRichPresenceAssetSmallText('AdvancedV')
+        SetDiscordRichPresenceAssetSmallText('AdvancedV.')
 		Citizen.Wait(1000)
 	end
 end)
