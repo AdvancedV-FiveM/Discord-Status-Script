@@ -4,7 +4,7 @@ Citizen.CreateThread(function()
 		SetDiscordRichPresenceAsset('kekekekkeke.png')
         SetDiscordRichPresenceAssetText('AdvancedV')
         SetDiscordRichPresenceAssetSmall('kekekekkeke.png')
-        SetDiscordRichPresenceAssetSmallText('AdvancedV Kek XD')
+        SetDiscordRichPresenceAssetSmallText('AdvancedV')
 		Citizen.Wait(1000)
 	end
 end)
