@@ -21,9 +21,9 @@ Citizen.CreateThread(function()
 			StreetName = GetStreetNameFromHashKey(StreetHash)
 			if IsPedOnFoot(PlayerPedId()) and not IsEntityInWater(PlayerPedId()) then
 				if IsPedSprinting(PlayerPedId()) then
-					SetRichPresence("ID: "..pId.." | "..pName.." sprintet die "..StreetName.." herrunter)
+					SetRichPresence("ID: "..pId.." | "..pName.." sprintet die "..StreetName.." herrunter")
 				elseif IsPedRunning(PlayerPedId()) then
-					SetRichPresence("ID: "..pId.." | "..pName.." rennt die "..StreetName.." herrunter)
+					SetRichPresence("ID: "..pId.." | "..pName.." rennt die "..StreetName.." herrunter")
 				elseif IsPedWalking(PlayerPedId()) then
 					SetRichPresence("ID: "..pId.." | "..pName.." läuft auf der "..StreetName)
 				elseif IsPedStill(PlayerPedId()) then
@@ -32,9 +32,9 @@ Citizen.CreateThread(function()
 			elseif GetVehiclePedIsUsing(PlayerPedId()) ~= nil and not IsPedInAnyHeli(PlayerPedId()) and not IsPedInAnyPlane(PlayerPedId()) and not IsPedOnFoot(PlayerPedId()) and not IsPedInAnySub(PlayerPedId()) and not IsPedInAnyBoat(PlayerPedId()) then
 				local MPH = math.ceil(GetEntitySpeed(GetVehiclePedIsUsing(PlayerPedId())) * 2.236936)
 				if MPH > 50 then
-					SetRichPresence("ID: "..pId.." | "..pName.." düst die "..StreetName.." mit "..MPH.."km/h in einem "..VehName.." herrunter)
+					SetRichPresence("ID: "..pId.." | "..pName.." düst die "..StreetName.." mit "..MPH.."km/h in einem "..VehName.." herrunter")
 				elseif MPH <= 50 and MPH > 0 then
-					SetRichPresence("ID: "..pId.." | "..pName.." fährt die "..StreetName.." mit "..MPH.."km/h in einem "..VehName.." herrunter)
+					SetRichPresence("ID: "..pId.." | "..pName.." fährt die "..StreetName.." mit "..MPH.."km/h in einem "..VehName.." herrunter")
 				elseif MPH == 0 then
 					SetRichPresence("ID: "..pId.." | "..pName.." steht auf der "..StreetName.." in einem "..VehName)
 				end
